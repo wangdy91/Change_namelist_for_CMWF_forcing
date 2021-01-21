@@ -190,6 +190,7 @@
       <value datm_mode="CLMCRUNCEP$">CLMCRUNCEP.Solar,CLMCRUNCEP.Precip,CLMCRUNCEP.TPQW</value>
       <value datm_mode="CLMCRUNCEPv7">CLMCRUNCEPv7.Solar,CLMCRUNCEPv7.Precip,CLMCRUNCEPv7.TPQW</value>
       <value datm_mode="CLMGSWP3v1">CLMGSWP3v1.Solar,CLMGSWP3v1.Precip,CLMGSWP3v1.TPQW</value>
+      <value datm_mode="ECMWF">ECMWF.LWdown,ECMWF.Precip,ECMWF.Psurf,ECMWF.Qair,ECMWF.Solar,ECMWF.Tair,ECMWF.Wind</value>
       <value datm_mode="CORE2_NYF" >CORE2_NYF.GISS,CORE2_NYF.GXGXS,CORE2_NYF.NCEP</value>
       <value datm_mode="CORE2_IAF" >CORE2_IAF.GCGCS.PREC,CORE2_IAF.GISS.LWDN,CORE2_IAF.GISS.SWDN,CORE2_IAF.GISS.SWUP,CORE2_IAF.NCEP.DN10,CORE2_IAF.NCEP.Q_10,CORE2_IAF.NCEP.SLP_,CORE2_IAF.NCEP.T_10,CORE2_IAF.NCEP.U_10,CORE2_IAF.NCEP.V_10,CORE2_IAF.CORE2.ArcFactor</value>
       <value datm_mode="CORE_IAF_JRA_1p4_2018" >CORE_IAF_JRA_1p4_2018.GCGCS.PREC,CORE_IAF_JRA_1p4_2018.GISS.LWDN,CORE_IAF_JRA_1p4_2018.GISS.SWDN,CORE_IAF_JRA_1p4_2018.NCEP.Q_10,CORE_IAF_JRA_1p4_2018.NCEP.SLP_,CORE_IAF_JRA_1p4_2018.NCEP.T_10,CORE_IAF_JRA_1p4_2018.NCEP.U_10,CORE_IAF_JRA_1p4_2018.NCEP.V_10</value>
@@ -212,7 +213,8 @@
       <value stream="CLM_QIAN">$DIN_LOC_ROOT/atm/datm7</value>
       <value stream="CLMCRUNCEPv7">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.cruncep_qianFill.0.5d.v7.c160715</value>
       <value stream="CLMCRUNCEP">$DIN_LOC_ROOT/share/domains/domain.clm</value>
-      <value stream="CLMGSWP3v1">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.GSWP3.0.5d.v1.c170516</value>
+      <value stream="CLMGSWP3v1">$DIN_LOC_ROOT/atm_forcing.datm7.GSWP3.0.5d.v1.c170516</value>
+      <value stream="ECMWF">$DIN_LOC_ROOT/share/domains/domain.clm</value>
       <value stream="CLMCRUNCEP\.">$DIN_LOC_ROOT/share/domains/domain.clm</value>
       <value stream="CLMCRUNCEP_V5">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.cruncep_qianFill.0.5d.V5.c140715</value>
       <value stream="CLMGSWP3">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.GSWP3.0.5d.v1.c170516</value>
@@ -274,6 +276,7 @@
       <value stream="CLMCRUNCEPv7">domain.lnd.360x720_cruncep.130305.nc</value>
       <value stream="CLMCRUNCEP">domain.lnd.360x720.130305.nc</value>
       <value stream="CLMGSWP3v1">domain.lnd.360x720_gswp3.0v1.c170606.nc</value>
+      <value stream="ECMWF">domain.lnd.360x720_ecmwf.c201217.nc</value>
       <value stream="CLMGSWP3">domain.lnd.360x720_gswp3.0v1.c170606.nc</value>
       <value stream="CORE2_NYF.GISS">nyf.giss.T62.051007.nc</value>
       <value stream="CORE2_NYF.GXGXS">nyf.gxgxs.T62.051007.nc</value>
@@ -427,6 +430,13 @@
       <value stream="CLMGSWP3v1.Solar">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.GSWP3.0.5d.v1.c170516/Solar</value>
       <value stream="CLMGSWP3v1.Precip">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.GSWP3.0.5d.v1.c170516/Precip</value>
       <value stream="CLMGSWP3v1.TPQW">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.GSWP3.0.5d.v1.c170516/TPHWL</value>
+      <value stream="ECMWF.LWdown">$DIN_LOC_ROOT/Ecmwf/LWdown</value>
+      <value stream="ECMWF.Precip">$DIN_LOC_ROOT/Ecmwf/Precip</value>
+      <value stream="ECMWF.Psurf">$DIN_LOC_ROOT/Ecmwf/Psurf</value>
+      <value stream="ECMWF.Qair">$DIN_LOC_ROOT/Ecmwf/Qair</value>
+      <value stream="ECMWF.Solar">$DIN_LOC_ROOT/Ecmwf/Solar</value>
+      <value stream="ECMWF.Tair">$DIN_LOC_ROOT/Ecmwf/Tair</value>
+      <value stream="ECMWF.Wind">$DIN_LOC_ROOT/Ecmwf/Wind</value>
       <value stream="CLMCRUNCEP_V5.Solar">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.cruncep_qianFill.0.5d.V5.c140715/Solar6Hrly</value>
       <value stream="CLMCRUNCEP_V5.Precip">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.cruncep_qianFill.0.5d.V5.c140715/Precip6Hrly</value>
       <value stream="CLMCRUNCEP_V5.TPQW">$DIN_LOC_ROOT_CLMFORC/atm_forcing.datm7.cruncep_qianFill.0.5d.V5.c140715/TPHWL6Hrly</value>
@@ -499,6 +509,13 @@
       <value  stream="CLMGSWP3v1.Solar">clmforc.GSWP3.c2011.0.5x0.5.Solr.%ym.nc</value>
       <value  stream="CLMGSWP3v1.Precip">clmforc.GSWP3.c2011.0.5x0.5.Prec.%ym.nc</value>
       <value  stream="CLMGSWP3v1.TPQW">clmforc.GSWP3.c2011.0.5x0.5.TPQWL.%ym.nc</value>
+      <value  stream="ECMWF.LWdown">ECMWF_c2020_LWdown.%ym.nc</value>
+      <value  stream="ECMWF.Precip">ECMWF_c2020_Prec.%ym.nc</value>
+      <value  stream="ECMWF.Psurf">ECMWF_c2020_Psurf.%ym.nc</value>
+      <value  stream="ECMWF.Qair">ECMWF_c2020_Qair.%ym.nc</value>
+      <value  stream="ECMWF.Solar">ECMWF_c2020_Slor.%ym.nc</value>
+      <value  stream="ECMWF.Tair">ECMWF_c2020_Tair.%ym.nc</value>
+      <value  stream="ECMWF.Wind">ECMWF_c2020_Wind.%ym.nc</value>
       <value  stream="CORE2_NYF.GISS">nyf.giss.T62.051007.nc</value>
       <value  stream="CORE2_NYF.GXGXS">nyf.gxgxs.T62.051007.nc</value>
       <value  stream="CORE2_NYF.NCEP">nyf.ncep.T62.050923.nc</value>
@@ -2347,6 +2364,27 @@
         PSRF     pbot
         FLDS     lwdn
       </value>
+      <value  stream="ECMWF.LWdown">
+        FLDS lwdn
+      </value>
+      <value  stream="ECMWF.Precip">
+        PRECTmms precn
+      </value>
+      <value  stream="ECMWF.Psurf">
+        PSRF pbot
+      </value>
+      <value  stream="ECMWF.Qair">
+        QBOT shum
+      </value>
+      <value  stream="ECMWF.Solar">
+        FSDS swdn
+      </value>
+      <value  stream="ECMWF.Tair">
+        TBOT tbot
+      </value>
+      <value  stream="ECMWF.Wind">
+        WIND wind
+      </value>
       <value stream="CORE2_NYF.GISS">
         lwdn  lwdn
         swdn  swdn
@@ -2545,6 +2583,7 @@
       <value stream="CLM_QIAN">$DATM_CLMNCEP_YR_ALIGN</value>
       <value stream="CLMCRUNCEP">$DATM_CLMNCEP_YR_ALIGN</value>
       <value stream="CLMGSWP3">$DATM_CLMNCEP_YR_ALIGN</value>
+      <value stream="ECMWF">$DATM_CLMNCEP_YR_ALIGN</value>
       <value stream="CORE2_NYF">1</value>
       <value stream="CORE2_IAF.CORE2.ArcFactor">1</value>
       <value stream="CORE2_IAF">1</value>
@@ -2581,6 +2620,7 @@
       <value stream="CLM1PT.1x1_vancouverCAN">1992</value>
       <value stream="CLM1PT.1x1_urbanc_alpha">0001</value>
       <value stream="CLM1PT.CLM_USRDAT">$DATM_CLMNCEP_YR_START</value>
+      <value stream="ECMWF">$DATM_CLMNCEP_YR_START</value>
       <value stream="CPLHISTForcing">$DATM_CPLHIST_YR_START</value>
       <value stream="CLM_QIAN_WISO">2000</value>
       <value stream="CLM_QIAN">$DATM_CLMNCEP_YR_START</value>
@@ -2640,6 +2680,7 @@
       <value stream="CLM1PT.1x1_vancouverCAN">1992</value>
       <value stream="CLM1PT.1x1_urbanc_alpha">0002</value>
       <value stream="CLM1PT.CLM_USRDAT">$DATM_CLMNCEP_YR_END</value>
+      <value stream="ECMWF">$DATM_CLMNCEP_YR_END</value>
       <value stream="CPLHISTForcing">$DATM_CPLHIST_YR_END</value>
       <value stream="CLM_QIAN_WISO">2004  </value>
       <value stream="CLM_QIAN">$DATM_CLMNCEP_YR_END  </value>
@@ -2885,6 +2926,7 @@
       <value datm_mode="CLM1PT">nn</value>
       <value stream="CLMCRUNCEP" atm_grid="hcru">copy</value>
       <value stream="CLMGSWP3" atm_grid="hcru">copy</value>
+      <value stream="ECMWF" atm_grid="hcru">copy</value>
       <value stream="co2tseries">nn</value>
     </values>
   </entry>
@@ -2956,6 +2998,13 @@
       <value stream="CLMCRUNCEPv7.Precip">nearest</value>
       <value stream="CLMGSWP3v1.Solar">coszen</value>
       <value stream="CLMGSWP3v1.Precip">nearest</value>
+      <value stream="ECMWF.LWdown">nearest</value>
+      <value stream="ECMWF.Precip">nearest</value>
+      <value stream="ECMWF.Psurf">nearest</value>
+      <value stream="ECMWF.Qair">nearest</value>
+      <value stream="ECMWF.Solar">nearest</value>
+      <value stream="ECMWF.Tair">nearest</value>
+      <value stream="ECMWF.Wind">nearest</value>
       <value stream="BC.CRUNCEP.GPCP.Precip">nearest</value>
       <value stream="BC.CRUNCEP.CMAP.Precip">nearest</value>
       <value stream="Anomaly.Forcing.Precip">nearest</value>
